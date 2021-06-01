@@ -17,6 +17,9 @@
             //and feeding them the data.names to iniciate on the first parameter
             charts(data.names[0]);
             table(data.names[0]);
+
+            // Bonus step gage
+
         });
     }
 

@@ -5,7 +5,7 @@
         let dropdown = d3.select("#selDataset");
 
         // Step 3: Using d3 I read the json data
-        d3.json("data/samples.json").then((data) => {
+        d3.json("/data/samples.json").then((data) => {
             console.log(data)
 
             // Step 4: append each of the value in names to a dropdown menu option using a foreach loop
@@ -34,7 +34,7 @@
     //Step 7: Create a function called charts to plot the bar chart adn bubble chart
     function charts(id) {
         //Step 8: Started by reading the json file 
-        d3.json("data/samples.json").then(sampledata => {
+        d3.json("/data/samples.json").then(sampledata => {
             console.log(sampledata)
                 //Step 9: Created the variable ids
             var ids = sampledata.samples[0].otu_ids;
@@ -114,7 +114,7 @@
     // get the data
     function table(id) {
         // read the json file to get data
-        d3.json("data/samples.json").then((data) => {
+        d3.json("/data/samples.json").then((data) => {
             // metadata for the demographic panel
             var metadata = data.metadata;
 
